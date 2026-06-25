@@ -1,0 +1,12 @@
+# One-click deploy config for Render (https://render.com).
+services:
+  - type: web
+    name: dealerlot
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn 'app:app' --bind 0.0.0.0:$PORT
+    envVars:
+      - key: DATABASE_PATH
+        value: /tmp/dealerlot.db
+    healthCheckPath: /healthz
