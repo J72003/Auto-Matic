@@ -3,6 +3,7 @@
 A full-stack web app for a car dealership that combines two things in one place: lot inventory management and instant market valuation. It tackles the same two problems Cox Automotive solves every day with **vAuto** (inventory management) and **Kelley Blue Book** (vehicle valuation).
 
 > Demo project. Pricing comes from a model trained on synthetic-but-realistic data, not live market data.
+> Website Link: https://auto-matic-lilac.vercel.app/
 
 ---
 
